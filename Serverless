@@ -1,0 +1,5 @@
+We will opt for serverless DBs when there is no consistent traffic to DB, 
+when the request comes the DB will be Up and request will be processed, 
+pricing will be calculated for the time taken to process the request,
+when traffic goes down then DB stops .
+thus, enabling ths usage cost of resources when traffic is inconsistent.
