@@ -1,0 +1,9 @@
+When to choose which type of DB?
+For Prototype: MYSQL,RDS, Postgres 
+For Production and unmanaged(u will manage ), Relational search (using one attribute to get another): RDS,MYSQL ,Postgres.
+For Production and Managed (AWS managed), Relational Search, consistent Traffic : AURORA RDS
+For Production and Managed (AWS managed), Relational Search, inconsistent Traffic: AURORA RDS serverless
+FOR Production , No Relational Search, TEXT based search : Elastic search or Cloud search
+FOR Production , No Relational Search, NO TEXT based search , Not Needed for transactions :ElastiCache
+FOR Production , No Relational Search, NO TEXT based search ,  Need it for  transactions, scaling is priority : DynamoDB.
+FOR Production , No Relational Search, NO TEXT based search , Need it for transactions, Ease Of Use is of Priority: MangoDB.
